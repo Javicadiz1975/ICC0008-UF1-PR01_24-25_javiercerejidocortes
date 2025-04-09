@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Jugadores NBA</ion-title>
+    <ion-buttons slot="end">
+      <!-- 📸 Botón de cámara en la cabecera de la página -->
+      <ion-button fill="clear" (click)="onCamera()">
+        <ion-icon name="camera-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let player of players" (click)="verDetalle(player)">
+      <ion-label>
+        <h2>{{ player.nombre }} {{ player.apellidos }}</h2>
+        <p>Altura: {{ player.altura || 'Desconocida' }} | Peso: {{ player.peso || 'Desconocido' }}</p>
+        <p>Equipo: {{ player.equipo }}</p>
+      </ion-label>
+
+      <!-- Solo el botón compartir por jugador -->
+      <ion-buttons slot="end">
+        <ion-button fill="clear" (click)="onShare(player); $event.stopPropagation();">
+          <ion-icon name="share-social-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+  </ion-list>
+</ion-content>

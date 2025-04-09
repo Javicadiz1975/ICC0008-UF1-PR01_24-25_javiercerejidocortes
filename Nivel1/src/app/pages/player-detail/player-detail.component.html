@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon name="arrow-back" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Detalle del Jugador</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" *ngIf="player">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ player.nombre }} {{ player.apellidos }}</ion-card-title>
+      <ion-card-subtitle>{{ player.equipo }}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p><strong>Altura:</strong> {{ player.altura }}</p>
+      <p><strong>Peso:</strong> {{ player.peso }}</p>
+      <p><strong>País:</strong> {{ player.pais }}</p>
+      <p><strong>Número:</strong> {{ player.numero }}</p>
+      <p><strong>Posición:</strong> {{ player.posicion }}</p>
+
+      <ion-button expand="block" (click)="toggleFavorite()">
+        <ion-icon slot="start" [name]="player.favorito ? 'star' : 'star-outline'"></ion-icon>
+        {{ player.favorito ? 'Quitar de favoritos' : 'Marcar como favorito' }}
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
