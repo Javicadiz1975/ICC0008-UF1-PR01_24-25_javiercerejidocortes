@@ -18,7 +18,7 @@ Si no deseas crear una cuenta, puedes usar las siguientes credenciales de prueba
 📧 Email: test@example.com  
 🔑 Contraseña: 123456
 
----
+-------
 
 ### **Nivel 1: Creación de la app y componentes básicos 
 Implementar página de login.
