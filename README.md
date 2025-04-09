@@ -3,6 +3,19 @@
 Aplicación desarrollada con **Ionic + Angular** para explorar jugadores de la NBA, guardar favoritos y gestionar autenticación mediante Firebase. Esta app está dividida en niveles de desarrollo, donde en cada carpeta se encuentra el nivel correspondiente.
 
 ---
+## 🎯 Instrucciones de Configuracion
+
+### Niveles 1 - 2 -3 
+npm install
+
+### Niveles 4
+npm install
+
+ionic build
+
+nox cap sync android
+
+npx cap run anfroid
 
 ## 🔐 Instrucciones de Uso
 
@@ -13,6 +26,7 @@ Puedes registrarte desde la pantalla de registro de la aplicación utilizando un
 ### 2. Cuenta de ejemplo
 
 Si no deseas crear una cuenta, puedes usar las siguientes credenciales de prueba:
+
 
 ```text
 📧 Email: test@example.com  
