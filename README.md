@@ -36,12 +36,12 @@ Utilizar servicios inyectables para separar la lógica de la API del componente.
 Si no deseas crear una cuenta, puedes usar las siguientes credenciales de prueba:
 
 Nivel 3: Persistencia con Firebase (2 puntos)
-(+1) Configurar Firebase en la app.
-(+1) Implementar Firebase para almacenar los jugadores favoritos.
+Configurar Firebase en la app.
+Implementar Firebase para almacenar los jugadores favoritos.
 
 Nivel 4: Funcionalidades nativas (2 puntos)
-(+1) Configurar el plugin de cámara de IONIC para poder seleccionar imágenes de la galería o sacar fotos.
-(+1) Configurar el plugin de compartir de IONIC para poder habilitar el modal de compartir nativo y enviar el nombre del jugador que hemos seleccionado.
+Configurar el plugin de cámara de IONIC para poder seleccionar imágenes de la galería o sacar fotos.
+Configurar el plugin de compartir de IONIC para poder habilitar el modal de compartir nativo y enviar el nombre del jugador que hemos seleccionado.
 
 
 
